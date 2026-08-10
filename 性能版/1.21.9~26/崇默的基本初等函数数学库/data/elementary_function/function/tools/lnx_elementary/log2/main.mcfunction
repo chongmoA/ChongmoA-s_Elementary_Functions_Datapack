@@ -1,0 +1,2 @@
+execute if score input elem_temp matches ..2047999 run function elementary_function:tools/lnx_elementary/log2/lnx2/lnx1
+execute if score input elem_temp matches 2048000.. run function elementary_function:tools/lnx_elementary/log2/lnx2/lnx2

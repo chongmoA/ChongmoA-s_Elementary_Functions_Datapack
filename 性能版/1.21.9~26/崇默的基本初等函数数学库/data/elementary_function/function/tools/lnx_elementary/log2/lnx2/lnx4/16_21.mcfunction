@@ -1,0 +1,12 @@
+execute if score input elem_temp matches 65536000..131071999 run scoreboard players set temp_num elem_temp 16
+execute if score input elem_temp matches 65536000..131071999 run scoreboard players set temp_num_2 elem_temp 65536
+execute if score input elem_temp matches 131072000..262143999 run scoreboard players set temp_num elem_temp 17
+execute if score input elem_temp matches 131072000..262143999 run scoreboard players set temp_num_2 elem_temp 131072
+execute if score input elem_temp matches 262144000..524287999 run scoreboard players set temp_num elem_temp 18
+execute if score input elem_temp matches 262144000..524287999 run scoreboard players set temp_num_2 elem_temp 262144
+execute if score input elem_temp matches 524288000..1048575999 run scoreboard players set temp_num elem_temp 19
+execute if score input elem_temp matches 524288000..1048575999 run scoreboard players set temp_num_2 elem_temp 524288
+execute if score input elem_temp matches 1048576000..2097151999 run scoreboard players set temp_num elem_temp 20
+execute if score input elem_temp matches 1048576000..2097151999 run scoreboard players set temp_num_2 elem_temp 1048576
+execute if score input elem_temp matches 2097152000.. run scoreboard players set temp_num elem_temp 21
+execute if score input elem_temp matches 2097152000.. run scoreboard players set temp_num_2 elem_temp 2097152

@@ -1,0 +1,1 @@
+$return run data get storage elementary:cos_table value[$(pointer)]

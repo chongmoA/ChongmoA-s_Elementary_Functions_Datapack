@@ -1,0 +1,1 @@
+$return run data get storage elementary:sin_table value[$(pointer)]

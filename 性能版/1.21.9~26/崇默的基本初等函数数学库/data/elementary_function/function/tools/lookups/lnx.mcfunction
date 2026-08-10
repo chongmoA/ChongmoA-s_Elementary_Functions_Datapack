@@ -1,0 +1,1 @@
+$return run data get storage elementary:lnx_table value[$(pointer)]
