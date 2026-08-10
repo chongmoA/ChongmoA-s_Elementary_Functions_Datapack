@@ -1,0 +1,2 @@
+execute if score input elem_temp matches ..607412 run function elementary_function:tools/lookups/arctan/atan2/atan4/atan8/atan16/atan32/15687_15691
+execute if score input elem_temp matches 607413.. run function elementary_function:tools/lookups/arctan/atan2/atan4/atan8/atan16/atan32/15692_15696

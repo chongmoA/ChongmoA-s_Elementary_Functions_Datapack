@@ -1,0 +1,7 @@
+{
+    "pack": {
+        "description": {"text":"欢迎使用chongmoA的数学库,这个数据包兼容1.21~1.21.8"},
+		"pack_format": 81,
+        "supported_formats": [48, 81]
+    }
+}
