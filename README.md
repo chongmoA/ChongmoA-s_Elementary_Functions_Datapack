@@ -57,21 +57,15 @@ sin函数的输入input缩放因子为1000
 
 [ 5 ]:函数介绍
 
-本数学库目前支持sin，cos，tan，arcsin，arccos，arctan，ln(x)，e^(x)，log_a(x)和a^(x)
-最终的结果值会储存到result参数
-如果对input定义域没有定义，那就是input∈[-2147483647,2147483647]
-对于有定义域的函数,如果输入的input不在定义域之内，返回result值均为0
-对于三角函数，均使用弧度制，一个pi取3140，缩放因子1000
-周期 6280/3140 为近似值（真实 6283.19/3141.59）。input 越大误差累积越大
-建议 |input| 保持在较小范围（如 2 万以内），否则结果失真。
+本数学库目前支持sin，cos，tan，arcsin，arccos，arctan，ln(x)，e^(x)，log_a(x)和a^(x)最终的结果值会储存到result参数如果对input定义域没有定义，那就是input∈[-2147483647,2147483647]对于有定义域的函数,如果输入的input不在定义域之内，返回result值均为0对于三角函数，角度制和弧度制都可以，对于弧度制，一个pi取3140，缩放因子1000周期 6280/3140 为近似值（真实 6283.19/3141.59）。input 越大误差累积越大建议 |input| 保持在较小范围（如 2 万以内），否则结果失真。
+
+数学库默认三角函数是弧度制，如果是角度制，需要在弧度制调用方法加上_deg后缀_
 
 [ 5 ]{ 1 }:sin
 
 函数调用:/function elementary_function:sin
 
-输入input缩放因子1000
-输出result缩放因子10000
-result = sin( input )
+输入input缩放因子1000输出result缩放因子10000result = sin( input )
 
 函数周期6280
 
@@ -79,9 +73,7 @@ result = sin( input )
 
 函数调用:/function elementary_function:cos
 
-输入input缩放因子1000
-输出result缩放因子10000
-result = cos( input )
+输入input缩放因子1000输出result缩放因子10000result = cos( input )
 
 函数周期6280
 
@@ -89,22 +81,15 @@ result = cos( input )
 
 函数调用:/function elementary_function:tan
 
-输入input缩放因子1000
-输出result缩放因子10000
-result = tan( input )
+输入input缩放因子1000输出result缩放因子10000result = tan( input )
 
-函数周期3140
-对任意整数周期 period，满足 {period｜period∈N，period <= 683911}
-若输入值满足 input = 1570 + 3140*period，函数输出恒为 result = 2147483647
-若输入值满足 input = -1570 - 3140*period，函数输出恒为 result = -2147483647
+函数周期3140对任意整数周期 period，满足 {period｜period∈N，period <= 683911}若输入值满足 input = 1570 + 3140*period，函数输出恒为 result = 2147483647若输入值满足 input = -1570 - 3140*period，函数输出恒为 result = -2147483647
 
 [ 5 ]{ 4 }:arcsin
 
 函数调用:/function elementary_function:arcsin
 
-输入input缩放因子1000
-输出result缩放因子10000
-result = arcsin( input )
+输入input缩放因子1000输出result缩放因子10000result = arcsin( input )
 
 input∈[-1000,1000]
 
@@ -112,9 +97,7 @@ input∈[-1000,1000]
 
 函数调用:/function elementary_function:arccos
 
-输入input缩放因子1000
-输出result缩放因子10000
-result = arccos( input )
+输入input缩放因子1000输出result缩放因子10000result = arccos( input )
 
 input∈[-1000,1000]
 
@@ -122,45 +105,103 @@ input∈[-1000,1000]
 
 函数调用:/function elementary_function:arctan
 
-输入input缩放因子1000
+输入input缩放因子1000输出result缩放因子10000result = arctan( input )
+
+[ 5 ]{ 7 }:sin角度制
+
+函数调用:/function elementary_function:sin_deg
+
+输入input缩放因子10
+
 输出result缩放因子10000
+
+result = sin( input )
+
+函数周期3600
+
+[ 5 ]{ 8 }:cos角度制
+
+函数调用:/function elementary_function:cos_deg
+
+输入input缩放因子10
+
+输出result缩放因子10000
+
+result = cos( input )
+
+函数周期3600
+
+[ 5 ]{ 9 }:tan角度制
+
+函数调用:/function elementary_function:tan_deg
+
+输入input缩放因子10
+
+输出result缩放因子10000
+
+result = tan( input )
+
+函数周期1800
+
+[ 5 ]{ 10 }:arcsin角度制
+
+函数调用:/function elementary_function:arcsin_deg
+
+输入input缩放因子1000
+
+输出result缩放因子10000
+
+result = arcsin( input )
+
+input∈[-1000,1000]
+
+[ 5 ]{ 11 }:arccos角度制
+
+函数调用:/function elementary_function:arccos_deg
+
+输入input缩放因子1000
+
+输出result缩放因子10000
+
+result = arccos( input )
+
+input∈[-1000,1000]
+
+[ 5 ]{ 6 }:arctan角度制
+
+函数调用:/function elementary_function:arctan_deg
+
+输入input缩放因子1000
+
+输出result缩放因子10000
+
 result = arctan( input )
 
-[ 5 ]{ 7 }:lnx
+[ 5 ]{ 13 }:lnx
 
 函数调用:/function elementary_function:lnx
 
-输入input缩放因子1000
-输出result缩放因子10000
-result = ln( input )
+输入input缩放因子1000输出result缩放因子10000result = ln( input )
 
 input∈(0,2147483647]
 
-[ 5 ]{ 8 }:e^x
+[ 5 ]{ 14}:e^x
 
 函数调用:/function elementary_function:ex
 
-输入input缩放因子1000
-输出result缩放因子10000
-result = e^(input)
+输入input缩放因子1000输出result缩放因子10000result = e^(input)
 
-input∈[-9208,12277]
-对于input<-9208，均返回0，由于数值的太小
-对于input>12277，均返回0，由于数值的太大，计分板储存不了
+input∈[-9208,12277]对于input<-9208，均返回0，由于数值的太小对于input>12277，均返回0，由于数值的太大，计分板储存不了
 
-[ 5 ]{ 9 }:log_a(x)
+[ 5 ]{ 15}:log_a(x)
 
 函数调用:/function elementary_function:log_a
 
-真数input缩放因子1000
-底数param缩放因子1000
-输出result缩放因子10000
-result = log_param(input)
+真数input缩放因子1000底数param缩放因子1000输出result缩放因子10000result = log_param(input)
 
-input∈(0,2147483647]
-param∈(0,1000)∪(1000,2147483647]
+input∈(0,2147483647]param∈(0,1000)∪(1000,2147483647]
 
-[ 5 ]{ 10 }:pow(a , x)
+[ 5 ]{ 16 }:pow(a , x)
 
 函数调用:/function elementary_function:pow
 
