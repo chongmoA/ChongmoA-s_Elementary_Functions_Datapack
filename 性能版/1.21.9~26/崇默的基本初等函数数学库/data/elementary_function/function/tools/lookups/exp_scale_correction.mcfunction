@@ -1,1 +1,0 @@
-$return run data get storage elementary:exp_scale_correction_table value[$(pointer)]

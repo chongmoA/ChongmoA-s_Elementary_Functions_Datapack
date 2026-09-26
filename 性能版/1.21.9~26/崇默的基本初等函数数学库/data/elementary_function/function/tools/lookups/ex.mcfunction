@@ -1,1 +1,0 @@
-$return run data get storage elementary:ex_table value[$(pointer)]

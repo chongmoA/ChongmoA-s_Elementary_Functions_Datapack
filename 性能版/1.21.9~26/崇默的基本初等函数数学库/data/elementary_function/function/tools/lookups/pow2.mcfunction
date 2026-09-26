@@ -1,1 +1,0 @@
-$return run data get storage elementary:pow2_table value[$(pointer)]

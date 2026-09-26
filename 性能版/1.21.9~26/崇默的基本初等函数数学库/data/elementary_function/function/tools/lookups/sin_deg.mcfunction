@@ -1,1 +1,0 @@
-$return run data get storage elementary:sin_table_deg value[$(pointer)]

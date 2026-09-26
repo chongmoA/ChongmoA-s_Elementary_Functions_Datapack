@@ -1,1 +1,0 @@
-$return run data get storage elementary:tan_table value[$(pointer)]
