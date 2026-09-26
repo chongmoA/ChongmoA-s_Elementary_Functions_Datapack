@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:cos",
+  "input": {
+    "type": "minecraft:storage",
+    "storage": "elementary:pointer",
+    "path": "pointer"
+  }
+}
+
+

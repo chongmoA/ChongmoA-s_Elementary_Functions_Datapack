@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:pow",
+  "base": {
+    "type": "minecraft:storage",
+    "storage": "elementary:pointer",
+    "path": "pointer"
+  },
+  "exponent": {
+    "type": "minecraft:storage",
+    "storage": "elementary:pointer",
+    "path": "param"
+  }
+}
+
+

@@ -1,0 +1,2 @@
+execute store result storage elementary:pointer pointer float 0.001 run scoreboard players get input elementary_function
+execute store result score result elementary_function run compute default float elementary_function:cos_get 10000

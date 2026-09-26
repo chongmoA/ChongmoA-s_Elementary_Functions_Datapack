@@ -1,0 +1,1 @@
+$return run data get storage elementary:arctan_table value[$(pointer)]

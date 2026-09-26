@@ -1,0 +1,1 @@
+$return run data get storage elementary:tan_deg_table value[$(pointer)]

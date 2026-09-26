@@ -1,0 +1,2 @@
+execute store result storage elementary:pointer pointer int 1 run scoreboard players get input elem_temp
+execute store result score result elementary_function run function elementary_function:tools/lookups/arctan with storage elementary:pointer
