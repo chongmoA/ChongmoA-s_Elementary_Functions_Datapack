@@ -1,6 +1,6 @@
 {
     "pack": {
-        "description": {"text":"欢迎使用chongmoA的数学库,这个数据包兼容1.21.9~26.2"},
+        "description": {"text":"欢迎使用chongmoA的数学库,这个数据包兼容26.3"},
 		"min_format": [121, 1],
         "max_format": [121, 1]
     }
